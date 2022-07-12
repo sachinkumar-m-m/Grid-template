@@ -1,0 +1,140 @@
+
+/* Mobile */
+@media(max-width:768px){
+    .banner{
+        display: none;
+    }
+    [class*='col']{
+        width: 100%;
+    }
+    .mobBanner{
+        display: block;
+    }
+    .mobBanner>header{
+        background: cadetblue;        
+        text-align: center;
+    }
+    .mobBanner>header>nav>ul{
+        list-style: none;
+    }
+    .mobBanner>header>nav>ul>li{
+        padding: 15px;
+    }
+    .mobBanner>header>nav>ul>li>a{
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+    }
+    .mobBanner>header>nav>ul>li.active{
+        background: gray;
+                
+    }
+    .mobBanner>header>nav>ul>li>a::after{
+        content: "";
+   display: block;
+   height: 3px;
+   width: 0px;
+   background: blue;
+   transition: all 0.5s;
+    }
+    .mobBanner>header>nav>ul>li:hover a::after{
+        color: blue; 
+        width: 100%;
+    }
+
+    .mobBanner>section{
+        background: url(../images/mobile.jpg);
+        height:700px;
+        background-size: 100%;
+        padding: 20px;
+    }
+    .mobBanner>section>div{
+        text-align: center;
+        transform: translateY(200px);
+        color: white;
+    }
+    .mobBanner>section>div>h1{
+        font-size: 40px;
+        text-shadow: 5px 5px 4px #06beb6;
+    }
+    .mobBanner>section>div>p{
+        padding: 20px;        
+    }
+    .mobBanner>section>div>button{
+        margin-top: 20px;
+        padding: 16px;
+        border-radius: 25px;
+        width: 200px;
+        border-style: none;
+        color: blue;
+     }
+     .mobBanner>section>div>button:hover{
+        color: white;
+        background: blue;
+     
+     }
+     
+     .count>.container>.row>.col-3{  
+        height: 200px; 
+        background: blue;   
+     }
+     .count>.container>.row>.col-3>h2{   
+        text-align: center;
+        margin: 10px;
+        color: white;  
+     }
+
+     .button>div{
+        text-align: center;
+     }
+     .button>div>img{
+        margin: auto;
+        width: 100%;
+     }
+
+}
+
+/* Tablets*/
+@media (min-width:768px) and (max-width:1200px) {
+    .mobBanner{
+        display: none;
+    }
+    .banner{
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5)), url(../images/tablet.jpg) no-repeat top;
+        height:450px; 
+        background-size: 100%;
+    }
+    .banner>header>nav{
+        text-align: center;
+    }
+    .banner>header>nav>ul{
+        float: none;
+    }
+    /* Services*/
+.services1>.col-4{
+    padding: 0%;
+}
+    .services1>h4{
+        font-size: small;
+        align-items: center;
+    }
+    .services>.container>.row>.col-4>div>h4{
+        width: auto;
+        align-items: center;
+    }
+
+    .count>.container>.row>.col-3>h2{   
+        text-align: center;
+        margin: 10px;
+        color: white;  
+     }
+
+    .button>div{
+        text-align: center;
+     }
+     .button>div>img{
+        margin: auto;
+        min-width: 100%;
+     }
+    
+ }

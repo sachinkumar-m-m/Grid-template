@@ -1,0 +1,261 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.bg-blue{
+   background: blue;
+   color: white;
+}
+.bg-black{
+   background: black;
+   color: white;
+}
+.text-blue{
+   color: blue;
+}
+.text-black{
+   color: black;
+}
+.text-center{
+   text-align: center;
+}
+
+/* Grid view */
+.container{
+   margin: auto 100px;
+}
+.row{
+   display: block;
+}
+.col-1{width:8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width:25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width:50% ;}
+.col-7{width: 58.33%;}
+.col-8{width:66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width:91.66%;}
+.col-12{width: 100%;}
+[class*="col"]{
+   float: left;
+   padding: 20px;
+}
+
+
+/* banner section */
+.banner{
+   background:linear-gradient(rgb(115, 112, 112),rgba(20, 21, 20, 0.3),rgba(0, 0, 0,0.8)), url("../images/desktop.jpg");
+   width: 100%;
+   height: 600px;
+}
+.banner>header{
+   background: cadetblue;
+   margin: auto 20px;    
+}
+.banner>header>nav>img{
+   height: 57px;
+}
+
+.banner>header>nav>ul{
+   list-style: none;
+   float: right;
+}
+.banner>header>nav>ul>li{
+   display: inline-block;
+   padding: 20px;
+}
+.banner>header>nav>ul>li>a{
+   text-decoration: none;
+   color: aliceblue;
+
+}
+.banner>header>nav>ul>li>a::after{
+   content: "";
+   display: block;
+   height: 3px;
+   width: 0px;
+   background: blue;
+   transition: all 0.5s;
+}
+
+.banner>header>nav>ul>li:hover a::after{
+   color: blue; 
+   width: 100%; 
+}
+.banner>header>nav>ul>.active{
+   background: rgba(6, 6, 6, 0.865);
+   border-radius: 5px;
+}
+
+.banner>div{
+   text-align: center;
+   color: white;
+   transform: translateY(100px);
+}
+.banner>div>h1{
+   font-size: xxx-large;
+   text-align: center;
+   text-shadow: 5px 5px 4px #06beb6;
+}
+.banner>div>p{
+   margin-top: 20px;
+}
+.banner>div>button{
+   margin-top: 20px;
+   padding: 16px;
+   border-radius: 25px;
+   width: 200px;
+   border-style: none;
+   color: blue;
+}
+.banner>div>button:hover{
+   color: white;
+   background: blue;
+
+}
+.mobBanner{
+   display: none;
+}
+
+/* main section */ 
+.main{
+   text-align: center;   
+   height:350px
+}
+.main>div{
+   transform: translateY(50px);
+}
+.main>div>h1{   
+   color: blue;
+   margin: 20px;
+}
+.main>div>h1::after{
+   content: "";
+   height: 2px;
+   width: 20px;
+   background: blue;
+}
+.main>div>button{
+   margin: 20px;
+   padding: 16px;
+   border-radius: 25px;
+   width: 200px;
+   border: 1px solid blue;
+   background: white;
+   color: blue;
+}
+.main>button:hover{
+   background: blue;
+   color: white;  
+}
+
+/*About */
+.col-4>h3{
+   text-align: center;
+   padding: 20px;
+}
+.col-4>p{
+   text-align: center;
+}
+
+/* Services */
+
+.services>.container>.row>.col-12>h1{
+   margin: 20px;
+}
+
+.services>.container>.row>.col-4>div>h4{
+   margin: 5px;
+}
+.services>.container>.row>.col-4>div>h4>i{
+   width: 50px;
+   margin-top: 10px;
+}
+
+.services>.container>.row>.col-4>div>h4{
+   height:50px;
+   width:100%;   
+   background: rgb(229, 220, 213);
+   /* text-align: center; */
+   /* padding: 20px; */
+}
+
+.services1>h4{
+   align-items: center;
+}
+.services1>h4>i{
+   align-items: center;
+}
+
+/* count */
+
+.count>.container>.row>.col-3{  
+   height: 250px; 
+   background: blue;   
+}
+.count>.container>.row>.col-3>h1{   
+   text-align: center;
+   margin: 10px;
+   color: white;
+}
+.count>.container>.row>.col-3>h2{   
+   text-align: center;
+   margin: 20px;
+   color: white;  
+}
+.count>.container>.row>.col-3>p{   
+   text-align: center;
+   margin: 10px;
+   color: white;  
+}
+
+/* portfolio */
+.portfolio>.container>.row>.col>h1{
+   text-align: center;
+   margin: 20px;
+   color: blue;
+}
+.portfolio>.container>.row>.col>p{
+   text-align: center;
+}
+.button{
+   margin: auto;
+}
+.button>ul{   
+   list-style: none;
+   text-align: center;
+}
+.button>ul>li{
+   display: inline-block;
+   margin:5px;
+   color: blue;
+}
+.button>div{
+   margin: auto;
+   text-align: center;
+}
+.button>div>img{
+   width:400px;
+   margin: auto;
+}
+
+footer{
+   background: blue;
+   text-align: center;
+   margin: 5px auto;   
+}
+
+img{
+   transition: transform .8s ease;
+}
+
+img:hover{
+   transform: scale(0.9);
+}
+
+
